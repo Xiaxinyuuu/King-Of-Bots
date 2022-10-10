@@ -1,11 +1,11 @@
 <template>
     <div ref="parent" class="gamemap">
-        <canvas ref="canvas" tabindex="0"></canvas> <!--加上tabindex属性后，canvas可以读取用户操作-->
+        <canvas ref="canvas" tabindex="0"></canvas>
     </div>
 </template>
 
 <script>
-import { GameMap } from "@/assets/scripts/GameMap"
+import { GameMap } from "@/assets/scripts/GameMap";
 import { ref, onMounted } from 'vue'
 
 export default {
@@ -13,9 +13,9 @@ export default {
         let parent = ref(null);
         let canvas = ref(null);
 
-        onMounted(() => { //组件挂载完之后需要执行的操作 
-            new GameMap(canvas.value.getContext('2d'), parent.value);
-        })
+        onMounted(() => {
+            new GameMap(canvas.value.getContext('2d'), parent.value)
+        });
 
         return {
             parent,
@@ -30,7 +30,7 @@ div.gamemap {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center; /*水平居中*/
-    align-items: center;  /*竖直居中*/
+    justify-content: center;
+    align-items: center;
 }
 </style>

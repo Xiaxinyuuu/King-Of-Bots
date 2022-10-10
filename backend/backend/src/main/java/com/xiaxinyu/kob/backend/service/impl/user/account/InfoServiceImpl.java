@@ -22,7 +22,7 @@ public class InfoServiceImpl implements InfoService {
         Map<String,String> res = new HashMap<>();
         res.put("error_message","success");
         res.put("id",user.getId().toString());
-        res.put("user_name",user.getPassword());
+        res.put("username",user.getUsername());
         res.put("photo",user.getPhoto());
         return res;
     }

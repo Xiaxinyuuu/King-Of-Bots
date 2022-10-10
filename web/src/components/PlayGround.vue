@@ -1,7 +1,6 @@
 <template>
     <div class="playground">
-        <GameMap>
-        </GameMap>
+        <GameMap />
     </div>
 </template>
 
@@ -13,7 +12,6 @@ export default {
         GameMap,
     }
 }
-
 </script>
 
 <style scoped>
@@ -23,4 +21,3 @@ div.playground {
     margin: 40px auto;
 }
 </style>
-
