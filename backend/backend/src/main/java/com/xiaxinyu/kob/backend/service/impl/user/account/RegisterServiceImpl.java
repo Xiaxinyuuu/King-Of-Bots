@@ -1,4 +1,4 @@
-package com.xiaxinyu.kob.backend.service.impl.account;
+package com.xiaxinyu.kob.backend.service.impl.user.account;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.xiaxinyu.kob.backend.mapper.UserMapper;

@@ -1,4 +1,4 @@
-package com.xiaxinyu.kob.backend.service.impl.account;
+package com.xiaxinyu.kob.backend.service.impl.user.account;
 
 import com.xiaxinyu.kob.backend.pojo.User;
 import com.xiaxinyu.kob.backend.service.impl.utils.UserDetailsImpl;
