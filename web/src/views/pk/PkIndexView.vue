@@ -9,7 +9,7 @@ import PlayGround from '@/components/PlayGround.vue'
 import MatchGround from '@/components/MatchGround.vue'
 import ResultBoard from '@/components/ResultBoard.vue'
 import {onMounted,onUnmounted} from 'vue'
-import { useStore } from "vuex";
+import { useStore } from "vuex"
 
 export default {
     components: {
@@ -22,6 +22,7 @@ export default {
         const scocketUrl = `ws://127.0.0.1:3000/websocket/${store.state.user.token}`
         let socket = null;
         store.commit("updateLoser","none");
+        store.commit("updateIsRecord",true);
         onMounted(() => {
             store.commit("updateOpponent",{
                 username: "我的对手",
