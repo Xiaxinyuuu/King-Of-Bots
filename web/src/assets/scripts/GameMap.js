@@ -96,7 +96,7 @@ export class GameMap extends AcGameObject {
             else if(e.key === 'd') d = 1;
             else if(e.key === 's') d = 2;
             else if(e.key === 'a') d = 3;
-
+            console.log(d);
             // console.log(d);
             if(d >= 0){
                 this.store.state.pk.socket.send(
