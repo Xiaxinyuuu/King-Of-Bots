@@ -25,7 +25,7 @@ export default {
         const scocketUrl = `wss://app3649.acapp.acwing.com.cn/websocket/${store.state.user.token}`
         let socket = null;
         store.commit("updateLoser","none");
-        store.commit("updateIsRecord",true);
+        store.commit("updateIsRecord",false);
         onMounted(() => {
             store.commit("updateOpponent",{
                 username: "我的对手",

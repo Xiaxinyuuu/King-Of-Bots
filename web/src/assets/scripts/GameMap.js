@@ -108,7 +108,11 @@ export class GameMap extends AcGameObject {
                 }
                 k ++;
             },300)
+
+            console.log("是录像");
         }else{
+
+            console.log("不是录像");
             this.ctx.canvas.focus();
 
             // const [snake0, snake1] = this.snakes;
