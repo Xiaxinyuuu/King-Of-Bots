@@ -43,7 +43,7 @@ div.go-back{
 }
 
 div.go-back:hover{
-    scale: 1.2;
+    transform:scale(1.2) ;
     transition: 100ms;
 
 }
