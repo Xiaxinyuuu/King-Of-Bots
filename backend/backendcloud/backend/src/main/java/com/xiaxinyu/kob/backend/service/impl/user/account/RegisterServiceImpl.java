@@ -64,6 +64,7 @@ public class RegisterServiceImpl implements RegisterService {
         user.setUsername(username);
         user.setPhoto(photo);
         user.setRating(1500);
+        user.setOpenid(null);
         userMapper.insert(user);
         res.put("error_message","success");
         return res;
