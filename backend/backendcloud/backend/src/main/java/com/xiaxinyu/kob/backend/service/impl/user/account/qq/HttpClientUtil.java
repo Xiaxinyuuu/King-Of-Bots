@@ -1,4 +1,4 @@
-package com.xiaxinyu.kob.backend.service.impl.user.account.acwing;
+package com.xiaxinyu.kob.backend.service.impl.user.account.qq;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

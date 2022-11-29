@@ -14,12 +14,11 @@ public class WebController {
     @Autowired
     private WebService webService;
 
-    @GetMapping("/api/user/account/acwing/web/apply_code")
+    @GetMapping("/api/user/account/qq/apply_code")
     public JSONObject applyCode() {
         return webService.applyCode();
     }
-
-    @GetMapping("/api/user/account/acwing/web/receive_code")
+    @GetMapping("/api/user/account/qq/receive_code")
     public JSONObject receiveCode(@RequestParam Map<String, String> data) {
         String code = data.get("code");
         String state = data.get("state");

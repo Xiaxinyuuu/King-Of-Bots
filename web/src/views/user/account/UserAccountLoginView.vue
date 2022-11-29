@@ -14,10 +14,10 @@
                     <div class="error-message">{{ error_message }}</div>
                     <button type="submit" class="btn btn-primary">提交</button>
                 </form>
-                <div style="text-align:center;margin-top: 20px;cursor: pointer;" @click="acwing_login">
-                    <img width="30" src="https://cdn.acwing.com/media/article/image/2022/09/06/1_32f001fd2d-acwing_logo.png" alt="">
+                <div style="text-align:center;margin-top: 20px;cursor: pointer;" @click="qq_login">
+                    <img width="30" src="https://wiki.connect.qq.com/wp-content/uploads/2013/10/02_qq_logo_ver-1-200x300.png" alt="">
                     <br>
-                    AcWing一键登录
+                    一键登录
                 </div>
             </div>
         </div>
@@ -75,13 +75,17 @@ export default {
             })
         }
 
-        const acwing_login = () => {
+        const qq_login = () => {
             $.ajax({
-                url: "https://app3649.acapp.acwing.com.cn/api/user/account/acwing/web/apply_code",
+                url: "https://xiaxinyuxy.top/api/user/account/qq/apply_code",
                 type: "get",
                 success: resp => {
-                    if(resp.result === "success")
+                    if(resp.result === "success"){
                         window.location.replace(resp.apply_code_url);
+                    }
+                },
+                error: resp => {
+                    console.log(resp.result);
                 }
             })
         }
@@ -91,7 +95,7 @@ export default {
             password,
             error_message,
             login,
-            acwing_login
+            qq_login
         }
     }
 }
